@@ -85,7 +85,7 @@ optional arguments:
 - [x] xc
 
 ### www
-- [x]
+
 - [x] Bypass-AMSI.ps1
 - [x] Bypass-UAC.ps1
 - [x] Discover-PSMSExchangeServers

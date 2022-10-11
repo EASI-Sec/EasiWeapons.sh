@@ -3,9 +3,11 @@ EasiWeapons.sh heavily relies on Python virtual environments and uses pipx, poet
 
 In order to launch the bleeding-edge version of a tool installed with pipx and not the version that is already shipped with Kali, you should modify the PATH variable:
 
-Modify PATH for a normal user with any method you want (.bashrc / .profile / .zshrc / etc.): export PATH="$HOME/.local/bin:$PATH".
-Modify PATH for the superuser by modifying secure_path within sudoers (sudo visudo):
-sudoers.png
+Modify PATH for a normal user with any method you want (.bashrc / .profile / .zshrc / etc.): 
+
+```
+export PATH="$HOME/.local/bin:$PATH"
+```
 
 Now you can download EasiWeapons.sh and run it from your home directory (pip may prompt for unlocking the keyring during the process). When it's done, you can check the results in ~/tools and ~/www:
 

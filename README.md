@@ -41,99 +41,99 @@ optional arguments:
 
 ### tools
 
- BloodHound.py
- BloodHound
- CVE-2020-1472 (checker)
- CrackMapExec
- Ebowla
- Empire
- LDAPPER
- PrivExchange
- Responder
- TrustVisualizer
- Windows-Exploit-Suggester
- aclpwn.py
- adidnsdump
- aquatone
- bettercap
- chisel
- crowbar
- cve-2019-1040-scanner
- dementor.py
- dsniff
- enum4linux-ng
- evil-winrm
- gateway-finder-imp
- gitjacker
- gobuster
- htbenum
- impacket
- kerbrute
- krbrelayx
- ldapdomaindump
- mitm6
- Nim via choosenim
- Nim-Scripts
- nullinux
- odat
- pypykatz
- pywerview
- rbcd-attack
- rbcd_permissions
- rdp-tunnel
- updog
- xc
+- [x] BloodHound.py
+- [x] BloodHound
+- [x] CVE-2020-1472 (checker)
+- [x] CrackMapExec
+- [x] Ebowla
+- [x] Empire
+- [x] LDAPPER
+- [x] PrivExchange
+- [x] Responder
+- [x] TrustVisualizer
+- [x] Windows-Exploit-Suggester
+- [x] aclpwn.py
+- [x] adidnsdump
+- [x] aquatone
+- [x] bettercap
+- [x] chisel
+- [x] crowbar
+- [x] cve-2019-1040-scanner
+- [x] dementor.py
+- [x] dsniff
+- [x] enum4linux-ng
+- [x] evil-winrm
+- [x] gateway-finder-imp
+- [x] gitjacker
+- [x] gobuster
+- [x] htbenum
+- [x] impacket
+- [x] kerbrute
+- [x] krbrelayx
+- [x] ldapdomaindump
+- [x] mitm6
+- [x] Nim via choosenim
+- [x] Nim-Scripts
+- [x] nullinux
+- [x] odat
+- [x] pypykatz
+- [x] pywerview
+- [x] rbcd-attack
+- [x] rbcd_permissions
+- [x] rdp-tunnel
+- [x] updog
+- [x] xc
 
 ### www
-
- Bypass-AMSI.ps1
- Bypass-UAC.ps1
- Discover-PSMSExchangeServers
- Discover-PSMSSQLServers
- DomainPasswordSpray.ps1
- Intercept-NG
- Inveigh.ps1
- InveighZero · Pre-Compiled · PowerSharpPack.ps1
- Invoke-ACLPwn.ps1
- Invoke-Kerberoast.ps1 (Empire)
- Invoke-Mimikatz.ps1 (Empire)
- Invoke-Portscan.ps1 (PowerSploit)
- Invoke-RunasCs.ps1
- Invoke-SMBClient.ps1
- Invoke-SMBEnum.ps1
- Invoke-SMBExec.ps1
- Invoke-WMIExec.ps1
- jaws-enum.ps1
- Out-EncryptedScript.ps1 (PowerSploit)
- PowerUp.ps1 (PowerSploit)
- PowerUpSQL.ps1
- PowerView2.ps1 (PowerSploit)
- PowerView3.ps1 (PowerSploit) (New-GPOImmediateTask)
- PowerView3.ps1 (PowerSploit)
- PowerView4.ps1 (ZeroDayLab)
- Powermad.ps1
- PrivescCheck.ps1
- PrintSpoofer · Invoke-BadPotato.ps1 (PowerSharpPack)
- ProcDump (Sysinternals)
- RoguePotato
- Rubeus · Pre-Compiled · Invoke-Rubeus.ps1 (Empire) · Invoke-Rubeus.ps1 (PowerSharpPack)
- Seatbelt · Pre-Compiled · Invoke-Seatbelt.ps1 (PowerSharpPack)
- SessionGopher.ps1
- Set-GpoStatus.ps1
- SharpGPOAbuse · Pre-Compiled · Invoke-SharpGPOAbuse.ps1 (PowerSharpPack)
- SharpHound.exe
- SharpHound.ps1
- Sherlock.ps1
- SpoolSample · Pre-Compiled · Invoke-Spoolsample.ps1 (PowerSharpPack)
- Watson · Pre-Compiled · Invoke-SharpWatson.ps1 (PowerSharpPack)
- WinPwn
- chisel
- htbenum.sh
- linux-exploit-suggester
- mimikatz
- netcat for Windows
- plink
- powercat.ps1
- pspy
- rdp2tcp.exe
- winPEAS.exe
+- [x]
+- [x] Bypass-AMSI.ps1
+- [x] Bypass-UAC.ps1
+- [x] Discover-PSMSExchangeServers
+- [x] Discover-PSMSSQLServers
+- [x] DomainPasswordSpray.ps1
+- [x] Intercept-NG
+- [x] Inveigh.ps1
+- [x] InveighZero · Pre-Compiled · PowerSharpPack.ps1
+- [x] Invoke-ACLPwn.ps1
+- [x] Invoke-Kerberoast.ps1 (Empire)
+- [x] Invoke-Mimikatz.ps1 (Empire)
+- [x] Invoke-Portscan.ps1 (PowerSploit)
+- [x] Invoke-RunasCs.ps1
+- [x] Invoke-SMBClient.ps1
+- [x] Invoke-SMBEnum.ps1
+- [x] Invoke-SMBExec.ps1
+- [x] Invoke-WMIExec.ps1
+- [x] jaws-enum.ps1
+- [x] Out-EncryptedScript.ps1 (PowerSploit)
+- [x] PowerUp.ps1 (PowerSploit)
+- [x] PowerUpSQL.ps1
+- [x] PowerView2.ps1 (PowerSploit)
+- [x] PowerView3.ps1 (PowerSploit) (New-GPOImmediateTask)
+- [x] PowerView3.ps1 (PowerSploit)
+- [x] PowerView4.ps1 (ZeroDayLab)
+- [x] Powermad.ps1
+- [x] PrivescCheck.ps1
+- [x] PrintSpoofer · Invoke-BadPotato.ps1 (PowerSharpPack)
+- [x] ProcDump (Sysinternals)
+- [x] RoguePotato
+- [x] Rubeus · Pre-Compiled · Invoke-Rubeus.ps1 (Empire) · Invoke-Rubeus.ps1 (PowerSharpPack)
+- [x] Seatbelt · Pre-Compiled · Invoke-Seatbelt.ps1 (PowerSharpPack)
+- [x] SessionGopher.ps1
+- [x] Set-GpoStatus.ps1
+- [x] SharpGPOAbuse · Pre-Compiled · Invoke-SharpGPOAbuse.ps1 (PowerSharpPack)
+- [x] SharpHound.exe
+- [x] SharpHound.ps1
+- [x] Sherlock.ps1
+- [x] SpoolSample · Pre-Compiled · Invoke-Spoolsample.ps1 (PowerSharpPack)
+- [x] Watson · Pre-Compiled · Invoke-SharpWatson.ps1 (PowerSharpPack)
+- [x] WinPwn
+- [x] chisel
+- [x] htbenum.sh
+- [x] linux-exploit-suggester
+- [x] mimikatz
+- [x] netcat for Windows
+- [x] plink
+- [x] powercat.ps1
+- [x] pspy
+- [x] rdp2tcp.exe
+- [x] winPEAS.exe

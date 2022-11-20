@@ -2086,7 +2086,7 @@ www() {
 # -----------------------------------------------------------------------------
 
 help() {
-	echo "usage: WeaponizeKali.sh [-h] [-i] [-d] [-t] [w]"
+	echo "usage: EasiWeapons.sh [-h] [-i] [-d] [-t] [w]"
 	echo
 	echo "optional arguments:"
 	echo "  -h                    show this help message and exit"
@@ -2094,6 +2094,7 @@ help() {
 	echo "  -d                    resolve dependencies"
 	echo "  -t                    download and install tools on Kali Linux"
 	echo "  -w                    download scripts and binaries for transferring onto the victim host"
+	echo "  -hidtw                basic install"
 }
 
 # -----------------------------------------------------------------------------

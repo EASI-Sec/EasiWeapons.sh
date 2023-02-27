@@ -236,10 +236,10 @@ BloodHound() {
 	sudo mkdir /usr/share/neo4j/logs/
 	mkdir -p ~/.config/bloodhound
 
-	downloadRawFile "https://github.com/ShutdownRepo/Exegol/raw/master/sources/bloodhound/customqueries.json" /tmp/customqueries1.json
-	downloadRawFile "https://github.com/CompassSecurity/BloodHoundQueries/raw/master/customqueries.json" /tmp/customqueries2.json
-	downloadRawFile "https://github.com/ZephrFish/Bloodhound-CustomQueries/raw/main/customqueries.json" /tmp/customqueries3.json
-	downloadRawFile "https://github.com/ly4k/Certipy/raw/main/customqueries.json" /tmp/customqueries4.json
+	downloadRawFile "https://raw.githubusercontent.com/ZephrFish/Bloodhound-CustomQueries/main/customqueries.json" /tmp/customqueries1.json
+	downloadRawFile "https://raw.githubusercontent.com/CompassSecurity/BloodHoundQueries/master/BloodHound_Custom_Queries/customqueries.json" /tmp/customqueries2.json
+	downloadRawFile "https://raw.githubusercontent.com/ZephrFish/Bloodhound-CustomQueries/main/customqueries.json" /tmp/customqueries3.json
+	downloadRawFile "https://raw.githubusercontent.com/ly4k/Certipy/main/customqueries.json" /tmp/customqueries4.json
 
 	python3 - << 'EOT'
 import json

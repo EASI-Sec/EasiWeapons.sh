@@ -13,13 +13,15 @@ magenta_bold="\033[1;35m"
 SITE="https://github.com/Easi-Sec/EasiWeapons.sh"
 VERSION="0.1.4"
 
-echo -e "${red_bold}    ______           _ _       __                                         __  ${nocolor}"
-echo -e "${red_bold}   / ____/___ ______(_) |     / /__  ____ _____  ____  ____  _____  _____/ /_ ${nocolor}"
-echo -e "${red_bold}  / __/ / __ `/ ___/ /| | /| / / _ \/ __ `/ __ \/ __ \/ __ \/ ___/ / ___/ __ \ ${nocolor}"
-echo -e "${red_bold} / /___/ /_/ (__  ) / | |/ |/ /  __/ /_/ / /_/ / /_/ / / / (__  ) (__  ) / / /${nocolor}"
-echo -e "${red_bold}/_____/\__,_/____/_/  |__/|__/\___/\__,_/ .___/\____/_/ /_/____(_)____/_/ /_/ ${nocolor}"
-echo -e "${red_bold}                                       /_/                                    ${nocolor}"
-echo    "                           		\"The more, the merrier\""
+echo -e "${red_bold}														${nocolor}"
+echo -e "${red_bold}███████╗ █████╗ ███████╗██╗██╗    ██╗███████╗ █████╗ ██████╗  ██████╗ ███╗   ██╗███████╗   ███████╗██╗  ██╗${nocolor}"
+echo -e "${red_bold}██╔════╝██╔══██╗██╔════╝██║██║    ██║██╔════╝██╔══██╗██╔══██╗██╔═══██╗████╗  ██║██╔════╝   ██╔════╝██║  ██║${nocolor}"
+echo -e "${red_bold}█████╗  ███████║███████╗██║██║ █╗ ██║█████╗  ███████║██████╔╝██║   ██║██╔██╗ ██║███████╗   ███████╗███████║${nocolor}"
+echo -e "${red_bold}██╔══╝  ██╔══██║╚════██║██║██║███╗██║██╔══╝  ██╔══██║██╔═══╝ ██║   ██║██║╚██╗██║╚════██║   ╚════██║██╔══██║${nocolor}"
+echo -e "${red_bold}███████╗██║  ██║███████║██║╚███╔███╔╝███████╗██║  ██║██║     ╚██████╔╝██║ ╚████║███████║██╗███████║██║  ██║${nocolor}"
+echo -e "${red_bold}╚══════╝╚═╝  ╚═╝╚══════╝╚═╝ ╚══╝╚══╝ ╚══════╝╚═╝  ╚═╝╚═╝      ╚═════╝ ╚═╝  ╚═══╝╚══════╝╚═╝╚══════╝╚═╝  ╚═╝${nocolor}"
+echo -e "${red} 					   The more, the merrier!					       ${nocolor}"
+echo -e "${red} 					   								       ${nocolor}"
 
 # -----------------------------------------------------------------------------
 # ----------------------------------- Init ------------------------------------
@@ -178,7 +180,15 @@ _pipx() {
 }
 
 _neo4j() {
-	installDebPackage neo4j
+	if installDebPackage neo4j ; then
+		success "Installed neo4j"
+	else
+		curl -fsSL https://debian.neo4j.com/neotechnology.gpg.key | sudo gpg --dearmor -o /usr/share/keyrings/neo4j.gpg
+		echo "deb [signed-by=/usr/share/keyrings/neo4j.gpg] https://debian.neo4j.com stable latest" | sudo tee -a /etc/apt/sources.list.d/neo4j.list
+		sudo apt-get update
+		installDebPackage neo4j
+		success "Installed neo4j"
+	fi
 }
 
 _snap() {
@@ -198,8 +208,8 @@ _dotnet() {
 
 dependencies() {
 	_jq
-	_python2-pip
-	_python2-dev
+	#_python2-pip
+	#_python2-dev
 	_python3-pip
 	_python3-venv
 	_setuptools
@@ -218,7 +228,7 @@ dependencies() {
 Amsi-Bypass-Powershell() {
 	_pushd tools
 	progress "Amsi-Bypass-Powershell"
-	cloneRepository "https://github.com/S3cur3Th1sSh1t/Amsi-Bypass-Powershell.git"
+	cloneRepository "https://github.com/S3cur3Th1sSh1t/Amsi-Bypass-Powershell"
 	_popd
 }
 
@@ -370,7 +380,7 @@ Covenant() {
 CrackMapExec() {
 	progress "CrackMapExec"
 	pipx install -f "git+https://github.com/byt3bl33d3r/CrackMapExec.git"
-	downloadRawFile "https://github.com/penetrarnya-tm/WeaponizeKali.sh/raw/main/conf/cme.conf" ~/.cme/cme.conf
+	downloadRawFile "https://github.com/ThePorgs/Exegol-images/raw/main/sources/assets/crackmapexec/cme.conf" ~/.cme/cme.conf
 }
 
 Creds() {
@@ -497,6 +507,11 @@ Neo-reGeorg() {
 	cloneRepository "https://github.com/L-codes/Neo-reGeorg.git"
 	python2 -m pip install -U requests
 	_popd
+}
+
+NetExec() {
+	progress "NetExec"
+	pipx install -f "git+https://github.com/Pennyw0rth/NetExec"	
 }
 
 Nim() {
@@ -1200,18 +1215,9 @@ sshuttle() {
 targetedKerberoast() {
 	_pushd tools
 	progress "targetedKerberoast"
-	cloneRepository "https://github.com/ShutdownRepo/targetedKerberoast.git"
+	cloneRepository "https://github.com/ShutdownRepo/targetedKerberoast"
 	cd targetedKerberoast
 	python3 -m pip install -U -r requirements.txt
-	_popd
-}
-
-ticket_converter() {
-	_pushd tools
-	progress "ticket_converter"
-	cloneRepository "https://github.com/eloypgz/ticket_converter.git"
-	cd ticket_converter
-	python2 -m pip install -U -r requirements.txt
 	_popd
 }
 
@@ -1306,7 +1312,7 @@ tools() {
 	DivideAndScan
 	Ebowla
 	Empire
-	ItWasAllADream
+	#ItWasAllADream
 	LDAPPER
 	LDAPmonitor
 	LdapRelayScan
@@ -1397,7 +1403,6 @@ tools() {
 	ssb
 	sshuttle
 	targetedKerberoast
-	ticket_converter
 	traitor
 	updog
 	webpage2html

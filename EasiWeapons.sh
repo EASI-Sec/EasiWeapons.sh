@@ -481,7 +481,7 @@ LightMe() {
 MANSPIDER() {
 	progress "MANSPIDER"
 	installDebPackage antiword
-	pipx install man-spider
+	pipx install git+https://github.com/blacklanternsecurity/MANSPIDER
 }
 
 MS17-010() {
